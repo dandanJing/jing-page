@@ -1,7 +1,26 @@
 doctype html
-html
+html(lang="en")
   head
+    meta(charset="utf-8")
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.css')
+    link(rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css")
+  body(style='background:black')
+    div(class="navbar navbar-inverse navbar-fixed-top" )
+      div(class='container')
+        div(class='navbar-header')
+          button(class='navbar-toggle collapsed' data-toggle="collapse" data-target=".navbar-collapse")
+            span(class='sr-only')='Toggle navigation'
+            span(class='icon-bar')
+            span(class='icon-bar')
+            span(class='icon-bar')
+          a(class='navbar-brand' href='#')='My little star'
+        div(class='collapse navbar-collapse' style='height: 1px;')
+          ul(class='nav navbar-nav')
+            li
+              a(href='#')='Home'
+            li
+              a(href='#')='About'
+      div( style='background-image: url(/images/img2.jpg);background-position: center 0;background-size: cover;height:200px' )
     block content
