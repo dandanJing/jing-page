@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>鸭蛋的主页</title>
+
+    <link href="bootstrap/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+    <!--webfont-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="javascripts/move-top.js"></script>
+    <script type="text/javascript" src="javascripts/easing.js"></script>
+    <script type="application/x-javascript"> 
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+        function hideURLbar(){ window.scrollTo(0,1); } 
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},800);
+            });
+        });
+    </script>
+
+</head>
+<body>
+<!-- header-section-starts -->
+<div class="header">
+    <div class="header-banner">
+        <div class="container">
+            <div class="top-menu row">
+                <ul class="nav-bars col-lg-10 col-md-10 col-sm-10">
+                    <li><a href="#ABOUT" class="scroll">成长经历</a></li>
+                    <li><a href="#WORK" class="scroll">技能Get</a></li>
+                    <li><a href="#BLOG" class="scroll">博客空间</a></li>
+                    <li><a href="#CONTACT" class="scroll">交流天地</a></li>
+                    <div class="clearfix"></div>
+                </ul>
+                <div class="dropdown col-lg-2 col-md-2 col-sm-2">
+                   <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" 
+                      data-toggle="dropdown">
+                      切换语言
+                      <span class="caret"></span>
+                   </button>
+                   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation">
+                         <a role="menuitem" tabindex="-1" href="#">English</a>
+                      </li>
+                   </ul>
+                </div>
+            </div>
+            <!--script-nav-->
+            <script>
+                $("span.menu").click(function(){
+                    $(".top-menu ul").slideToggle("slow" , function(){
+                    });
+                });
+            </script>
+            <div class="header-banner-info text-center">
+                <a href="#"><img  class="img-circle" src="images/myavatar1.jpg" alt="" style="width:100px;" /></a>
+                <h3>欢 迎~</h3>
+                <h1>我 是 <span>刘 菁 菁</span> </h1>
+                <p>湖 南 湘 潭 人 </p>
+                <span class="line"></span>
+                <ul class="social-icons">
+                    <li><a href="http://usr.qzone.qq.com/1544299536/" target="_blank"><i class="twitter"></i></a></li>
+                    <li><a href="http://www.renren.com/339349344/profile" target="_blank"><i class="dribble"></i></a></li>
+                    <!-- <li><a href="#"><i class="behance"></i></a></li> -->
+                </ul>
+                <label></label>
+                <ul class="details">
+                    <li>年龄     :     <a href="#">23</a></li>
+                    <li>国籍     :     <a href="#">中国</a></li>
+                    <li>职业     :     <a href="#">学生</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- header-section-ends -->
+
+<!-- content-section-starts -->
+<div class="content-section">
+    <!-- about-section-starts -->
+    <div class="about-section" id="ABOUT">
+        <div class="container">
+            <div class="about-section-head text-center">
+                <img src="images/head.png" alt="" />
+                <h3>成长经历</h3>
+                <label></label>
+                <p>我的成长轨迹</p>
+            </div>
+            <div class="about-section-grids">
+                <div id="portfoliolist1">
+                    <div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="#small-dialog" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim1">
+                                <img src="images/pic-1.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">1993年，呱呱坠地~<img src="./images/icon-eye.png" alt=""/></h2>
+                            </div></a>
+                        </div>
+                    </div>
+                    <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="#small-dialog1" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim1">
+                                <img src="images/pic-2.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">1998年，小学生活开始<img src="images/icon-eye.png" alt=""/></h2>
+                            </div></a>
+                        </div>
+                    </div>
+                    <div class="portfolio web mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="web" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim1">
+                                <img src="images/pic-3.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">2004年，升入初中<img src="./images/icon-eye.png" alt=""/></h2>
+                            </div></a>
+                        </div>
+
+                    </div>
+                    <div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim1">
+                                <img src="images/pic-4.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">2007年，进入湘潭县一中<img src="images/icon-eye.png" alt=""/></h2>
+                            </div></a>
+                        </div>
+
+                    </div>
+                    <div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim1">
+                                <img src="images/pic-5.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">2010年，来到清华大学<img src="./images/icon-eye.png" alt=""/></h2>
+                            </div></a>
+                        </div>
+
+                    </div>
+                    <div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim1">
+                                <img src="images/pic-6.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">2014年，本系直升<img src="images/icon-eye.png" alt=""/></h2>
+                            </div></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- pop-up-box -->
+            <script type="text/javascript" src="javascripts/modernizr.custom.min.js"></script>
+            <link href="stylesheets/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+            <script src="javascripts/jquery.magnific-popup.js" type="text/javascript"></script>
+            <!-- //pop-up-box -->
+            <div id="small-dialog" class="mfp-hide">
+                <div class="image-top">
+                    <img src="images/pic1.jpg" class="img-responsive" alt="" />
+                    <p>1993年春， </p>
+                </div>
+            </div>
+            <div id="small-dialog1" class="mfp-hide">
+                <div class="image-top">
+                    <img src="images/pic2.jpg" class="img-responsive" alt="" />
+                    <p>1998年，</p>
+                </div>
+            </div>
+            <div id="small-dialog2" class="mfp-hide">
+                <div class="image-top">
+                    <img src="images/pic3.jpg" class="img-responsive" alt="" />
+                    <p>2004年</p>
+                </div>
+            </div>
+            <div id="small-dialog3" class="mfp-hide">
+                <div class="image-top">
+                    <img src="images/pic4.jpg" class="img-responsive" alt="" />
+                    <p>2007年</p>
+                </div>
+            </div>
+            <div id="small-dialog4" class="mfp-hide">
+                <div class="image-top">
+                    <img src="images/pic5.jpg" class="img-responsive" alt="" />
+                    <p>2010年， </p>
+                </div>
+            </div>
+            <div id="small-dialog5" class="mfp-hide">
+                <div class="image-top">
+                    <img src="images/pic6.jpg" class="img-responsive" alt="" />
+                    <p>2014年</p>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    $('.popup-with-zoom-anim1').magnificPopup({
+                        type: 'inline',
+                        fixedContentPos: false,
+                        fixedBgPos: true,
+                        overflowY: 'auto',
+                        closeBtnInside: true,
+                        preloader: false,
+                        midClick: true,
+                        removalDelay: 300,
+                        mainClass: 'my-mfp-zoom-in'
+                    });
+
+                });
+            </script>
+        </div>
+    </div>
+    <!-- about-section-ends -->
+
+    <!-- skills-section-starts -->
+    <div class="skills-section" id="WORK">
+        <div class="container">
+            <div class="skills-section-head about-section-head text-center">
+                <img src="images/head.png" alt="" />
+                <h3>技能Get</h3>
+                <label></label>
+                <p>技能成长经历</p>
+            </div>
+             <div class="skills-div">
+                <ul id="flexiselDemo1">
+                    <li>
+                        <div class="skills-program">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4>MIPS处理器</h4>
+                                    <p>项目来源:课程</p>
+                                    <p>项目时间：3周</p>
+                                    <p>项目人数：3人</p>
+                                    <p>项目目的：32位MIPS处理器开发</p>
+                                    <p>项目成果：在XX开发板上，时钟频率为68MHz</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>收获技能</h4>
+                                    <p>硬技能</p>
+                                    <div class="progress-grid">
+                                        <div class="meter red">
+                                               <span style="width:100%;">
+                                                <div class="progress_desc">Verilog 编程</div>
+                                                <div class="percent">100%</div>
+                                                <div class="clearfix"> </div>
+                                               </span>
+                                        </div>
+                                        <div class="meter animate">
+                                               <span style="width:95%;"><div class="progress_desc">MIPS指令体系和结构</div>
+                                                <div class="percent">95%</div>
+                                                <div class="clearfix"> </div>
+                                               </span>
+                                        </div>
+                                        <div class="meter">
+                                                <span style="width:85%;"><div class="progress_desc">微型处理器内核</div>
+                                                 <div class="percent">85%</div>
+                                                 <div class="clearfix"> </div>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <p>软技能</p>
+                                    <div class="progress-grid">
+                                        <div class="meter red">
+                                               <span style="width:80%;">
+                                                <div class="progress_desc">任务分析与分解</div>
+                                                <div class="percent">80%</div>
+                                                <div class="clearfix"> </div>
+                                               </span>
+                                        </div>
+                                        <div class="meter animate">
+                                               <span style="width:80%;"><div class="progress_desc">团队合作和沟通</div>
+                                                <div class="percent">80%</div>
+                                                <div class="clearfix"> </div>
+                                               </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8 skills-program-imgs-div">
+                                    <div class="wmuSlider example1 section" id="section-1">
+                                        <article style="position: absolute; width: 100%; opacity: 0;">
+                                            <img src="./images/img1.jpg" class="img-responsive" alt="">
+                                        </article>
+                                        <article style="position: absolute; width: 100%; opacity: 0;">
+                                            `                   <img src="./images/img2.jpg" class="img-responsive" alt="">
+                                        </article>
+                                        <article style="position: absolute; width: 100%; opacity: 0;">
+                                            <img src="./images/img3.jpg" class="img-responsive" alt="">
+                                        </article>
+                                        <ul class="wmuSliderPagination">
+                                            <li><a href="#" class="">0</a></li>
+                                            <li><a href="#" class="">1</a></li>
+                                            <li><a href="#" class="">2</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <div class="skills-program">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4>MIPS处理器</h4>
+                                    <p>项目来源:课程</p>
+                                    <p>项目时间：3周</p>
+                                    <p>项目人数：3人</p>
+                                    <p>项目目的：32位MIPS处理器开发</p>
+                                    <p>项目成果：在XX开发板上，时钟频率为68MHz</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>收获技能</h4>
+                                    <p>硬技能</p>
+                                    <div class="progress-grid">
+                                        <div class="meter red">
+                                               <span style="width:100%;">
+                                                <div class="progress_desc">Verilog 编程</div>
+                                                <div class="percent">100%</div>
+                                                <div class="clearfix"> </div>
+                                               </span>
+                                        </div>
+                                        <div class="meter animate">
+                                               <span style="width:95%;"><div class="progress_desc">MIPS指令体系和结构</div>
+                                                <div class="percent">95%</div>
+                                                <div class="clearfix"> </div>
+                                               </span>
+                                        </div>
+                                        <div class="meter">
+                                                <span style="width:85%;"><div class="progress_desc">微型处理器内核</div>
+                                                 <div class="percent">85%</div>
+                                                 <div class="clearfix"> </div>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <p>软技能</p>
+                                    <div class="progress-grid">
+                                        <div class="meter red">
+                                               <span style="width:80%;">
+                                                <div class="progress_desc">任务分析与分解</div>
+                                                <div class="percent">80%</div>
+                                                <div class="clearfix"> </div>
+                                               </span>
+                                        </div>
+                                        <div class="meter animate">
+                                               <span style="width:80%;"><div class="progress_desc">团队合作和沟通</div>
+                                                <div class="percent">80%</div>
+                                                <div class="clearfix"> </div>
+                                               </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8 skills-program-imgs-div">
+                                    <div class="wmuSlider example1 section" id="section-1">
+                                        <article style="position: absolute; width: 100%; opacity: 0;">
+                                            <img src="images/pic1.jpg" class="img-responsive" alt="">
+                                        </article>
+                                        <article style="position: absolute; width: 100%; opacity: 0;">
+                                            `                   <img src="images/pic2.jpg" class="img-responsive" alt="">
+                                        </article>
+                                        <article style="position: absolute; width: 100%; opacity: 0;">
+                                            <img src="images/pic3.jpg" class="img-responsive" alt="">
+                                        </article>
+                                        <ul class="wmuSliderPagination">
+                                            <li><a href="#" class="">0</a></li>
+                                            <li><a href="#" class="">1</a></li>
+                                            <li><a href="#" class="">2</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                       
+                        <div class="skills-program">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4>MIPS处理器</h4>
+                                    <p>项目来源:课程</p>
+                                    <p>项目时间：3周</p>
+                                    <p>项目人数：3人</p>
+                                    <p>项目目的：32位MIPS处理器开发</p>
+                                    <p>项目成果：在XX开发板上，时钟频率为68MHz</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>收获技能</h4>
+                                    <p>硬技能</p>
+                                    <div class="progress-grid">
+                                        <div class="meter red">
+                                               <span style="width:100%;">
+                                                <div class="progress_desc">Verilog 编程</div>
+                                                <div class="percent">100%</div>
+                                                <div class="clearfix"> </div>
+                                               </span>
+                                        </div>
+                                        <div class="meter animate">
+                                               <span style="width:95%;"><div class="progress_desc">MIPS指令体系和结构</div>
+                                                <div class="percent">95%</div>
+                                                <div class="clearfix"> </div>
+                                               </span>
+                                        </div>
+                                        <div class="meter">
+                                                <span style="width:85%;"><div class="progress_desc">微型处理器内核</div>
+                                                 <div class="percent">85%</div>
+                                                 <div class="clearfix"> </div>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <p>软技能</p>
+                                    <div class="progress-grid">
+                                        <div class="meter red">
+                                               <span style="width:80%;">
+                                                <div class="progress_desc">任务分析与分解</div>
+                                                <div class="percent">80%</div>
+                                                <div class="clearfix"> </div>
+                                               </span>
+                                        </div>
+                                        <div class="meter animate">
+                                               <span style="width:80%;"><div class="progress_desc">团队合作和沟通</div>
+                                                <div class="percent">80%</div>
+                                                <div class="clearfix"> </div>
+                                               </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8 skills-program-imgs-div">
+                                    <div class="wmuSlider example1 section" id="section-1">
+                                        <article style="position: absolute; width: 100%; opacity: 0;">
+                                            <img src="images/pic4.jpg" class="img-responsive" alt="">
+                                        </article>
+                                        <article style="position: absolute; width: 100%; opacity: 0;">
+                                            `                   <img src="images/pic5.jpg" class="img-responsive" alt="">
+                                        </article>
+                                        <article style="position: absolute; width: 100%; opacity: 0;">
+                                            <img src="images/pic6.jpg" class="img-responsive" alt="">
+                                        </article>
+                                        <ul class="wmuSliderPagination">
+                                            <li><a href="#" class="">0</a></li>
+                                            <li><a href="#" class="">1</a></li>
+                                            <li><a href="#" class="">2</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <script src="javascripts/jquery.wmuSlider.js"></script>
+            </div>
+
+            <script type="text/javascript" src="javascripts/jquery.flexisel.js"></script> 
+            <script type="text/javascript">
+                $(window).load(function() {
+                    $("#flexiselDemo1").flexisel({
+                        visibleItems: 1,
+                        animationSpeed: 1000,
+                        autoPlay: false,
+                        autoPlaySpeed: 3000,
+                        pauseOnHover: true,
+                        wmuSliderName:'.example1',
+                        enableResponsiveBreakpoints: true,
+                        responsiveBreakpoints: {
+                            portrait: {
+                                changePoint:480,
+                                visibleItems: 1
+                            },
+                            landscape: {
+                                changePoint:640,
+                                visibleItems: 1
+                            },
+                            tablet: {
+                                changePoint:768,
+                                visibleItems: 1
+                            }
+                        }
+                    });
+                });
+            </script>
+            
+        </div>
+    </div>
+    <!-- skills-section-ends -->
+
+    <!-- blog-section-starts -->
+    <div class="blog-section" id="BLOG">
+        <div class="container">
+            <div class="blog-section-head text-center">
+                <h3>博客空间</h3>
+                <label></label>
+                <p>最新博文</p>
+            </div>
+            <div class="blog-section-grids">
+                <div class="col-md-9 blog-section-left-grid">
+                    <div class="blog-section-banner">
+                        <img src="images/blog.jpg" class="img-responsive" alt="" />
+                        <a href="#"><h3>阿里云服务器部署</h3></a>
+                        <span>24 OCT 2013 in<a href="#">FREE PSDS</a> - 2 Comments</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi felis nunc, vulputate vel mi quis, pulvinar porttitor sem. Vivamus posuere condimentum posuere. Sed vel lacus eros. Praesent euismod tortor libero, quis bibendum diam ultricies ac.</p>
+                        <p>Suspendisse bibendum auctor mi. Nam suscipit dui ut ligula aliquet, sed posuere ligula fermentum. Duis vel metus velit. <label> Maecenas pellentesque, </label> lorem non condimentum egestas, lorem lorem elementum quam, a consequat purus neque et ipsum. Donec eu dignissim magna. Pellentesque a placerat urna, at semper nibh. Cras venenatis quam placerat eros ullamcorper, dignissim varius purus malesuada. </p>
+                        <div class="blog-section-tags">
+                            <p><span>TAGS </span> :  free, psd, megi, themes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 blog-section-right-grid">
+                    <div class="search">
+                        <h5>Search</h5>
+                        <div class="search-box">
+                            <form>
+                                <input type="text" class="text" value="search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'search';}">
+                                <input type="submit" value>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="categories">
+                        <h5>CATEGORIES</h5>
+                        <ul>
+                            <li><a href="#">design</a></li>
+                            <li><a href="#">icon</a></li>
+                            <li><a href="#">psds</a></li>
+                            <li><a href="#">photograph</a></li>
+                        </ul>
+                    </div>
+                    <div class="archives">
+                        <h5>archives</h5>
+                        <ul>
+                            <li><a href="#">july 2014</a></li>
+                            <li><a href="#">june 2014</a></li>
+                            <li><a href="#">may 2014</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="span_4_row">
+                <div class="col-md-3 col">
+                    <img src="images/r1.jpg" class="img-responsive" alt="" />
+                    <div class="image-text">
+                        <h5>Vivamus Rutrum Adipiscing Eros</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Fusce mole.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col">
+                    <img src="images/r2.jpg" class="img-responsive" alt="" />
+                    <div class="image-text">
+                        <h5>Vivamus Rutrum Adipiscing Eros</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Fusce mole.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col">
+                    <img src="images/r3.jpg" class="img-responsive" alt="" />
+                    <div class="image-text">
+                        <h5>Vivamus Rutrum Adipiscing Eros</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Fusce mole.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col">
+                    <img src="images/r4.jpg" class="img-responsive" alt="" />
+                    <div class="image-text">
+                        <h5>Vivamus Rutrum Adipiscing Eros</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Fusce mole.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- blog-section-ends -->
+
+    <!-- content-section-starts -->
+    <div class="contact-section text-center" id="CONTACT">
+        <div class="container">
+            <div class="contact-section-head">
+                <h3>交流天地</h3>
+                <label></label>
+                <p>给我留言</p>
+            </div>
+            <div class="contact-info">
+                <ul>
+                    <li><i class="message"></i></li>
+                    <li><a href="#">1544299536@qq.com</a></li>
+                    <li><i class="phone"></i></li>
+                    <li>18101360342</li>
+                </ul>
+                <form>
+                    <input type="text" class="text" value="你的名字" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '你的名字';}">
+                    <input type="text" class="text" value="你的邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '你的邮箱';}">
+                    <textarea onfocus="if(this.value == '请输入留言内容') this.value='';" onblur="if(this.value == '') this.value='请输入留言内容';" >请输入留言内容</textarea>
+                    <input type="button" value="发送留言">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- content-section-ends -->
+
+<!-- footer-section-starts -->
+<div class="footer">
+    <div class="container">
+        <div class="copy-rights text-center">
+            <p>&copy; 2016 </p>
+        </div>
+    </div>
+</div>
+<!-- footer-section-ends -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
+
+       $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>
