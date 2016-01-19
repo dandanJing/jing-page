@@ -11,6 +11,7 @@
     <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- Custom Theme files -->
     <script src="/javascripts/jquery.min.js"></script>
+     <script src="/bootstrap/js/bootstrap.js"></script>
 
     <!--webfont-->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
@@ -36,15 +37,26 @@
 <div class="header">
     <div class="header-banner">
         <div class="container">
-            <div class="top-menu">
-                <span class="menu"> </span>
-                <ul>
-                    <li><a href="#ABOUT" class="scroll">ABOUT</a></li>
-                    <li><a href="#WORK" class="scroll">WORK</a></li>
+            <div class="top-menu row">
+                <ul class="nav-bars col-lg-10 col-md-10 col-sm-10">
+                    <li><a href="#ABOUT" class="scroll">GROWTH</a></li>
+                    <li><a href="#WORK" class="scroll">SKILLS</a></li>
                     <li><a href="#BLOG" class="scroll">BLOG</a></li>
                     <li><a href="#CONTACT" class="scroll">CONTACT</a></li>
                     <div class="clearfix"></div>
                 </ul>
+                <div class="dropdown col-lg-2 col-md-2 col-sm-2">
+                   <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" 
+                      data-toggle="dropdown">
+                      Language
+                      <span class="caret"></span>
+                   </button>
+                   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation">
+                         <a role="menuitem" tabindex="-1" href="/">中文</a>
+                      </li>
+                   </ul>
+                </div>
             </div>
             <!--script-nav-->
             <script>
@@ -56,19 +68,18 @@
             <div class="header-banner-info text-center">
                 <a href="#"><img src="/images/logo.png" alt="" /></a>
                 <h3>HELLO</h3>
-                <h1>my name is <span>Emrah,</span> </h1>
-                <p>I'm a UI/UX designer born in istanbul. </p>
+                <h1>my name is <span>Jingjing Liu,</span> </h1>
+                <p>I'm a web developer born in China. </p>
                 <span class="line"></span>
                 <ul class="social-icons">
-                    <li><a href="#"><i class="twitter"></i></a></li>
-                    <li><a href="#"><i class="dribble"></i></a></li>
-                    <li><a href="#"><i class="behance"></i></a></li>
+                    <li><a href="http://usr.qzone.qq.com/1544299536/" target="_blank"><i class="twitter"></i></a></li>
+                    <li><a href="http://www.renren.com/339349344/profile" target="_blank"><i class="dribble"></i></a></li>
                 </ul>
                 <label></label>
                 <ul class="details">
                     <li>Age     :     <a href="#">23</a></li>
-                    <li>Country     :     <a href="#">TURKEY</a></li>
-                    <li>Working at     :     <a href="#">FREELANCE</a></li>
+                    <li>Country     :     <a href="#">China</a></li>
+                    <li>Career     :     <a href="#">Student</a></li>
                 </ul>
             </div>
         </div>

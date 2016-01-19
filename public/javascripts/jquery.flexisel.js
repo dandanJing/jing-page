@@ -59,6 +59,9 @@
         			methods.appendHTML();
         			methods.setEventHandlers();      			
         			methods.initializeItems();
+        			if(defaults.wmuSliderName){
+        				$(defaults.wmuSliderName).wmuSlider();
+        			}
 				});
 			},
 
@@ -75,15 +78,12 @@
     			var innerWidth = listParent.width(); // Set widths
     			itemsWidth = (innerWidth)/itemsVisible;
     			childSet.width(itemsWidth);
-    			childSet.last().insertBefore(childSet.first());
-    			childSet.last().insertBefore(childSet.first());
+				childSet.last().insertBefore(childSet.first());
+    			childSet.last().insertBefore(childSet.first());	
     			object.css({'left' : -itemsWidth}); 
-
-    			object.fadeIn();
+	    		object.fadeIn();
 				$(window).trigger("resize"); // needed to position arrows correctly
-
 			},
-			
 			
 			/******************************
 			Append HTML
@@ -245,7 +245,7 @@
 							queue:false, 
 							duration:settings.animationSpeed,
 							easing: "linear",
-							complete: function() {  
+							complete: function() { 
 								childSet.first().insertAfter(childSet.last()); // Get the first list item and put it after the last list item (that's how the infinite effects is made)   
 								methods.adjustScroll();
 								canNavigate = true; 
