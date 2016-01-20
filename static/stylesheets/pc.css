@@ -1,0 +1,5 @@
+.header{background-color: #6c6c6c;height: 30px;color: #fff;font-size: 10px;padding-top: 7px;line-height: 16px;}
+.header a{color: #fff;font-size: 10px;line-height: 16px;margin-left: 10px;}
+.header-left{margin-left: 3%;}
+.header-right{position: fixed;right: 3%;top: 7px;}
+.content{width: 1200px;text-align: center;margin: 0 auto;background-color: #eee;}
