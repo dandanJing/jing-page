@@ -1,5 +1,39 @@
 .header{background-color: #6c6c6c;height: 30px;color: #fff;font-size: 10px;padding-top: 7px;line-height: 16px;}
-.header a{color: #fff;font-size: 10px;line-height: 16px;margin-left: 10px;}
+.header a{color: #fff;font-size: 12px;line-height: 16px;margin-left: 10px;}
 .header-left{margin-left: 3%;}
 .header-right{position: fixed;right: 3%;top: 7px;}
-.content{width: 1200px;text-align: center;margin: 0 auto;background-color: #eee;}
+.content{max-width: 1200px;min-width:960px;text-align: center;margin: 0 auto;background-color: #fff;}
+.logo{display: inline;float: left;margin: 11px 100px 11px 40px;}
+.nav-bar{height: 60px;}
+.nav-btns{display: inline;list-style: none;}
+.nav-btns li{float: left;width: 85px;height: 100%;vertical-align: center;line-height: 20px;padding-top: 20px;}
+.nav-btns li a{color: #474747;font-size: 14px;}
+.nav-btns li.active a{color: #d53b33;}
+.fl{float: left;}
+.fr{float: right;}
+.searchbar{display: inline;position: relative;}
+.searchbar img{position: absolute;left: 5px;top: -1px;}
+.searchbar input{background-color: #f1f1f1;border-radius: 5px;border:1px solid #ededed;text-indent: 28px;
+	font-size: 14px;height: 30px;min-width: 170px;margin-top: 15px;}
+.post-btn{width: 87px;margin-right: 40px;height: 30px;margin-top: 15px;background-color: #d53b33;border-radius: 5px;
+	color: #fff;box-shadow: none;border:none;margin-left: 30px;}
+.item img{width: 100%;}
+.items-div{padding: 0 40px;}
+.items-title{height: 48px;padding-top: 20px;border-bottom: 1px solid #d2d2d2;margin-top: 3px;}
+.items-title .title-dot{width: 20px;height: 15px;background-color: #d53b33;color: #d53b33;float: left;margin-top: 3px;}
+.items-title .title-cont{font-size: 14px;color: #a1a1a1;float: left;margin-left: 10px;}
+.items-ul{list-style: none;padding: 0;}
+.item-li{display: inline-block;width: 180px;margin: 20px 11px 0 11px;}
+.item-li img{width: 100%;}
+.li-cont{margin: 10px 16px 0;padding-bottom: 10px;}
+.li-title{font-size: 14px;color: #474747;text-overflow:ellipsis;white-space: nowrap;overflow: hidden;}
+.li-prices{display: block;}
+.li-prices span{float: left;margin-top: 6px;font-size: 14px;color: #a1a1a1;}
+.li-prices .price{color: #d53b33;}
+.li-prices .old-price{text-decoration: line-through;margin-left: 10px;}
+.li-place,.li-time{margin-top: 6px;font-size: 10px;color: #a1a1a1;}
+
+/*@media screen and (min-width: 1200px) {
+	.item-li{width:224px;}
+	.item-li a{margin-left: 12px;width: 180px;}
+}*/

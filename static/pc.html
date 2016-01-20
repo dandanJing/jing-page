@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,129 @@
     <div class="clearfix"></div>
 
     <div class="content">
-        
+        <div class="nav-bar text-center">
+            <img src="images/tzy_logo.png" class="logo">
+            <ul class="nav-btns ">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="/all-sale/">出售</a></li>
+                <li><a href="/all-rent/">出租</a></li>
+                <li><a href="/all-group/">组织</a></li>
+            </ul>
+            <div class="fr">
+                <div class="searchbar">
+                    <img src="images/tzy_search.png">
+                    <input class="text" id="searchword" placeholder="搜索">
+                </div>
+                <button class="post-btn">+ 发布</button>
+            </div>
+            
+        </div>
+        <div class="clearfix"></div>
+        <div class="posters">
+            <div class="item">
+                <img src="images/poster1.png">
+            </div>
+        </div>
+        <div class="items-div">
+            <div class="items-title text-left">
+                <div class="title-dot">.</div>
+                <div class="title-cont">热门推荐</div>
+            </div>
+            <div class="clearfix"></div>
+            <!-- script  starts -->
+            <script type="text/javascript">
+                //调整 items-ul 的物品为居中显示
+                window.onresize=function(){
+                   modifyFrame();
+                };
+                $(document).ready(function(){
+                    modifyFrame();
+                });
+                
+                function modifyFrame(){
+                    var num=Math.floor($(".items-ul").width()/202);
+                    var blank=$(".items-ul").width()-num*180;
+                    var li_left= blank/num/2-2;
+                    console.log(li_left);
+                    $(".items-ul li").css({'margin-left':li_left+'px','margin-right':li_left+'px'});
+                    // var left = $(".items-ul").width()-num*202;
+                    // $(".items-ul").css({'padding-left':left/2+'px'});
+                }
+            </script>
+            <!-- script  ends -->
+            <ul class="items-ul text-left">
+                <li class="item-li"><a href="/open-post-item?itemid=">
+                    <img src="images/man.jpg">
+                    <div class="li-cont">
+                        <div class="li-title">时尚魔音耳机，特别好的额。尝试尝试吧</div>
+                        <div class="li-prices">
+                            <span class="price">$300</span>
+                            <span class="old-price">$300</span>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="li-place fl">清华大学</div>
+                        <div class="li-time fr">2天前</div>
+                        <div class="clearfix"></div>
+                    </div></a>
+                </li>
+                <li class="item-li"><a href="/open-post-item?itemid=">
+                    <img src="images/man.jpg">
+                    <div class="li-cont">
+                        <div class="li-title">时尚魔音耳机</div>
+                        <div class="li-prices">
+                            <span class="price">$300</span>
+                            <span class="old-price">$300</span>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="li-place fl">清华大学</div>
+                        <div class="li-time fr">2天前</div>
+                        <div class="clearfix"></div>
+                    </div></a>
+                </li>
+                <li class="item-li"><a href="/open-post-item?itemid=">
+                    <img src="images/man.jpg">
+                    <div class="li-cont">
+                        <div class="li-title">时尚魔音耳机</div>
+                        <div class="li-prices">
+                            <span class="price">$300</span>
+                            <span class="old-price">$300</span>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="li-place fl">清华大学</div>
+                        <div class="li-time fr">2天前</div>
+                        <div class="clearfix"></div>
+                    </div></a>
+                </li>
+                <li class="item-li"><a href="/open-post-item?itemid=">
+                    <img src="images/man.jpg">
+                    <div class="li-cont">
+                        <div class="li-title">时尚魔音耳机</div>
+                        <div class="li-prices">
+                            <span class="price">$300</span>
+                            <span class="old-price">$300</span>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="li-place fl">清华大学</div>
+                        <div class="li-time fr">2天前</div>
+                        <div class="clearfix"></div>
+                    </div></a>
+                </li>
+                <li class="item-li"><a href="/open-post-item?itemid=">
+                    <img src="images/man.jpg">
+                    <div class="li-cont">
+                        <div class="li-title">时尚魔音耳机</div>
+                        <div class="li-prices">
+                            <span class="price">$300</span>
+                            <span class="old-price">$300</span>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="li-place fl">清华大学</div>
+                        <div class="li-time fr">2天前</div>
+                        <div class="clearfix"></div>
+                    </div></a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="clearfix"></div>
 
